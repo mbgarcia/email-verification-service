@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Page for email verification</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="stylesheet" type="text/css" href="webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Email verification</a>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				Email verification result
+			</div>
+			<div class="panel-body" id="result">
+				<pre>
+					{Json response}
+				</pre>
+			</div>
+		</div>
+		
+		<h3>
+			<span class="label label-success hidden" id="token-valid">TOKEN VALIDADO COM SUCESSO</span>
+			<span class="label label-danger hidden"  id="token-invalid" >TOKEN VALIDADO COM SUCESSO</span>			
+		</h3>
+	</div>
+
+	<script type="text/javascript" src="webjars/jquery/2.2.4/jquery.min.js"></script>
+
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
