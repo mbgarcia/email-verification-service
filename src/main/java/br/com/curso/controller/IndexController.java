@@ -10,4 +10,9 @@ public class IndexController {
     public String index() {
         return "ajax";
     }
+    
+    @GetMapping("/reset-password")
+    public String reset() {
+    	return "reset";
+    }
 }

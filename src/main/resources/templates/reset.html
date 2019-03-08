@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Page for token validation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="stylesheet" type="text/css"
+	href="webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Reset Password</a>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="panel panel-primary">
+			<div class="panel-heading">Reset Password</div>
+			<div class="panel-body" id="result">
+				<form id="reset-form">
+					<div class="form-group">
+						<label for="password">Password</label> <input type="password"
+							class="form-control" id="password" placeholder="Password" />
+					</div>
+
+					<div class="form-group">
+						<label for="confirm-password">Confirm Password</label> <input
+							type="password" class="form-control" id="confirm-password"
+							placeholder="Password" />
+					</div>
+
+					<button type="submit" class="btn btn-default">Submit</button>
+				</form>
+			</div>
+		</div>
+		<h3>
+			<span class="label label-success hidden" id="reset-ok">SENHA
+				ALTERADA COM SUCESSO</span> <span class="label label-danger hidden"
+				id="reset-not-ok">FALHA AO ALTERAR SENHA</span>
+		</h3>
+	</div>
+
+	<script type="text/javascript" src="webjars/jquery/2.2.4/jquery.min.js"></script>
+
+	<script type="text/javascript" src="js/reset.js"></script>
+</body>
+</html>
